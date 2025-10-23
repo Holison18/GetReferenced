@@ -30,6 +30,8 @@
 
 
 
+
+
   - Create unit tests for authentication middleware
   - Test role-based access control functionality
   - Verify JWT token handling and session management
@@ -63,7 +65,9 @@
   - Set up department affiliation and contact information management
   - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5_
 
-- [ ]\* 2.3 Create registration form validation tests
+- [ ] 2.3 Create registration form validation tests
+
+
 
   - Test form validation rules and error handling
   - Verify file upload functionality and format validation
@@ -105,7 +109,9 @@
   - Implement audit log viewer and data export functionality
   - _Requirements: 8.1, 8.2, 8.3, 8.4, 8.5_
 
-- [ ]\* 3.4 Write dashboard component tests
+- [ ] 3.4 Write dashboard component tests
+
+
 
   - Test dashboard data loading and display
   - Verify role-based dashboard access and functionality
@@ -141,7 +147,9 @@
   - Add auto-cancellation after 2 weeks of inactivity
   - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5_
 
-- [ ]\* 4.3 Create request management tests
+- [ ] 4.3 Create request management tests
+
+
 
   - Test request creation workflow and validation
   - Verify status transitions and notification triggers

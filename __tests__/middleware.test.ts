@@ -36,13 +36,18 @@ jest.mock('../lib/audit-logger', () => ({
 }))
 
 // Mock NextResponse
+const mockNextResponse = {
+  next: jest.fn(),
+  redirect: jest.fn(),
+  json: jest.fn()
+}
+
 jest.mock('next/server', () => ({
-  NextResponse: {
-    next: jest.fn(),
-    redirect: jest.fn(),
-    json: jest.fn()
-  }
+  NextResponse: mockNextResponse
 }))
+
+// Import middleware after mocking
+import { middleware } from '../middleware'
 
 describe('Middleware', () => {
   let mockSupabaseClient: any
@@ -85,8 +90,7 @@ describe('Middleware', () => {
       }
     }
 
-    const { NextResponse } = require('next/server')
-    NextResponse.next.mockReturnValue({
+    mockNextResponse.next.mockReturnValue({
       headers: new Headers(),
       cookies: {
         set: jest.fn()
