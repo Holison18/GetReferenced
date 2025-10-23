@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/notifications/scheduled",
+      "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/notifications/process-queue", 
+      "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/notifications/scheduled",
+      "schedule": "0 0 * * 0"
+    }
+  ]
+}
